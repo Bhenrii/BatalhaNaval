@@ -2,23 +2,13 @@
 
 int main()
 {
-    int inserir;
+    int inserir = 0;
 
-    int *graficoBatalha[10][10] = {
-        {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-        {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-        {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-        {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-        {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-        {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-        {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-        {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-        {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-        {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}};
+    int graficoBatalha[10][10];
     printf("  A B C D E F G H I J\n");
     for (int i = 0; i < 10; i++)
     {
-        printf("%d ", i);
+        printf("%d ", i );
         for (int j = 0; j <= 10; j++)
         {
             if (j == 10)
@@ -37,6 +27,7 @@ int main()
             
             else
             {
+                graficoBatalha[i][j] = inserir;
                 printf("%d ", graficoBatalha[i][j]);
             }
         }
